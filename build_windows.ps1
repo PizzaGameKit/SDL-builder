@@ -70,7 +70,7 @@ Write-Host "Generate SDL" -ForegroundColor DarkCyan
 	Remove-Item $sdlBuild -Recurse -ErrorAction SilentlyContinue
 	if (!(Test-Path -Path $sdlBuild)) {New-Item $sdlBuild -Type Directory >$null}
 
-	cmake -S $sdlPath -B $sdlBuild -G "Visual Studio 17 2022" -A $cmake_arch -D CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded | Out-File -FilePath "$logFolder/SDL.gen.log" -Append
+	cmake -S $sdlPath -B $sdlBuild -G "Visual Studio 17 2022" -A $cmake_arch -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded | Out-File -FilePath "$logFolder/SDL.gen.log" -Append
 
 	Write-Host "`tDone"
 

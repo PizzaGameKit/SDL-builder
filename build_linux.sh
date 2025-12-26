@@ -24,7 +24,7 @@ echo "Generate SDL"
 
 rm -r -f $sdlBuild
 
-cmake -S $sdlPath -B $sdlBuild > "$logFolder/SDL.gen.log"
+cmake -S $sdlPath -B $sdlBuild -DCMAKE_BUILD_TYPE=Release > "$logFolder/SDL.gen.log"
 
 echo -e "\tDone"
 
