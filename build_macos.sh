@@ -31,8 +31,6 @@ echo "Build SDL"
 
 cmake --build $sdlBuild --target SDL3-shared > "$logFolder/SDL.bin.log"
 
-find "$sdlBuild/" -name "libSDL3.dylib"
-find "$sdlBuild/" -name "libSDL3.0.dylib"
-cp -f "$sdlBuild/bin/libSDL3.0.dylib" "$outputFolder/libSDL3.0.dylib"
+cp -f "$sdlBuild/libSDL3.dylib" "$outputFolder/libSDL3.dylib"
 
 echo -e "\tDone"
