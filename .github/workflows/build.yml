@@ -30,7 +30,8 @@ jobs:
               libxinerama-dev libxxf86vm-dev libxss-dev libgl1-mesa-dev libdbus-1-dev \
               libudev-dev libgles2-mesa-dev libegl1-mesa-dev libibus-1.0-dev \
               fcitx-libs-dev libsamplerate0-dev libsndio-dev libwayland-dev \
-              libxkbcommon-dev libdrm-dev libgbm-dev
+              libxkbcommon-dev libdrm-dev libgbm-dev ninja-build gnome-desktop-testing \
+              libfribidi-dev libxtst-dev libthai-dev libpipewire-0.3-dev libdecor-0-dev liburing-dev
       shell: bash
         
     - name: Checkout repository

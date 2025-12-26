@@ -31,6 +31,6 @@ echo "Build SDL"
 
 cmake --build $sdlBuild --target SDL3-shared > "$logFolder/SDL.bin.log"
 
-cp -f "$sdlBuild/bin/msdf-atlas-gen" "$outputFolder/msdf-atlas-gen"
+cp -f "$sdlBuild/bin/libSDL3.dylib" "$outputFolder/libSDL3.dylib"
 
 echo -e "\tDone"
